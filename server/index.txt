@@ -1,0 +1,31 @@
+const express = require('express');
+const path = require('path');
+
+const app = express();
+const PORT = 3000;
+
+// Serve the static files from the Angular app
+app.use(express.static(path.join(__dirname, '../dist/your-project-name')));
+
+// Send all requests to Angular app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/your-project-name/index.html'));
+});
+
+// Start the Node.js server
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+
+
+ APP_PORT=3000
+ DB_PORT=3306
+ HOST= database-1.ctwqscs04obr.ap-south-1.rds.amazonaws.com
+ PASSWORD=admin123
+ USER=admin
+ DATABASE=test
+JSON_WEB_KEY=qwe1234
+RAZORPAY_ID_KEY="rzp_test_ZtbwyUBjrxVj6e"
+RAZORPAY_SECRET_KEY="Eq5eU9duaxI2WVoZ17PAoAoL"
+GOOGLE_MAPS_API_KEY=AlzaSylXxUrB1sz8QivNuuyP3LfzPMAZvI_W_kM

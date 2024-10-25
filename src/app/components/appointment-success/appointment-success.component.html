@@ -1,0 +1,21 @@
+<div class="container bg-info">
+    <div class="confirmation-card">
+        <div class="header">
+            <h1>Appointment Confirmed!</h1>
+            <p>Thank you for booking with us.</p>
+        </div>
+        <div class="details">
+            <h2>Appointment Details</h2>
+            <ul>
+                <li><strong>Source: </strong> <span id="source">{{appointment.source}}</span></li>
+                <li><strong>Destination: </strong> <span id="destination">{{appointment.destination}}</span></li>
+                <li><strong>Travel Date: </strong> <span id="travelDate">{{appointment.travelDate}}</span></li>
+                <li><strong>Travel Time: </strong> <span id="travelTime">{{appointment.travelTime}}</span></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <a  class="btn btn-primary" (click)="goHome()">Go to Home</a>
+            <a routerLink="/manage-appointment" class="btn btn-secondary">Manage Appointment</a>
+        </div>
+    </div>
+</div> 

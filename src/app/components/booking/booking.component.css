@@ -1,0 +1,50 @@
+
+.mat-form-field {
+    display: block; /* Ensure the field takes up full width */
+    position: relative; /* Important for proper positioning */
+    z-index: 1000; /* Adjust z-index if necessary */
+  }
+  
+  .mat-datepicker-content {
+    z-index: 2000; /* Ensure the datepicker is on top of other content */
+  }
+
+
+  .myinputfields{
+    background-color: rgb(233, 224, 224);
+
+  }
+
+  /* General Styles for Mobile Screens */
+@media (max-width: 576px) {
+  .container {
+      padding: 10px; /* Add some padding for smaller screens */
+  }
+
+  .card {
+      border-radius: 10px; /* Keep rounded corners */
+      margin: 0; /* Remove margins for full-width cards */
+  }
+
+
+
+  .card-header h2 {
+      margin-top: 60px; /* Ensure heading has space above */
+      font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .myinputfields {
+      height: 50px; /* Adjust height for input fields */
+      font-size: 0.9rem; /* Slightly smaller font for inputs */
+  }
+
+  .btn {
+      width: 90%; /* Full-width button for better touch targets */
+      font-size: 1rem; /* Increase button font size for readability */
+      padding: 12px; /* Increase padding for better touch */
+  }
+
+  .form-row {
+      margin-bottom: 15px; /* Space between form rows */
+  }
+}
