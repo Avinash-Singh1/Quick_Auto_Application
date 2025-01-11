@@ -2,6 +2,7 @@
 
 This is a full-stack application built using Angular for the frontend and Node.js with Express for the backend. The app provides [insert brief description of app functionality].
 
+
 ## Table of Contents
 
 
@@ -25,6 +26,14 @@ This is a full-stack application built using Angular for the frontend and Node.j
       - Payment processing using **Razorpay** for secure transactions.
       - Confirmation messages via **Twilio** for WhatsApp to notify customers of their booking status and appointment details.
 
+
+      **Passender Login Type**
+
+      ![Screenshot 2025-01-11 135444](https://github.com/user-attachments/assets/64e416d2-5ff6-4b17-a256-70c4c6cdef6f)
+
+      **Driver Login Type**
+
+      ![image](https://github.com/user-attachments/assets/43fe46f1-cc12-4927-b772-a6d8c9f95e7d)
 ## Prerequisites
 
 Before running this project, ensure you have the following installed:
